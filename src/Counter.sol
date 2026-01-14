@@ -31,8 +31,7 @@ contract SimpleVault {
 
     // Constructor
     
-        emit Deposit(msg.sender, msg.value, block.timestamp);
-    }
+    
 
     /**
      * @dev Withdraw ETH from the vault
