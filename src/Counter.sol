@@ -14,4 +14,12 @@ contract Counter {
     function subNumber(uint256 b) public view returns (uint256) {
         return number - b;
     }
+
+    function mulNumber(uint256 b) public view returns (uint256) {
+        return number * b;
+    }
+
+    function divNumber(uint256 b) public view returns (uint256) {
+        return number / b;
+    }
 }
