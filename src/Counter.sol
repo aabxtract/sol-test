@@ -25,7 +25,9 @@ contract SimpleVault {
     }
 
     modifier whenNotPaused() {
-        require(!isPaused, "Contract is paused"
+        require(!isPaused, "Contract is paused");
+        _;
+    }
 
     /**
      * @dev Withdraw ETH from the vault
