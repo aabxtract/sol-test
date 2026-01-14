@@ -25,9 +25,7 @@ contract SimpleVault {
     }
 
     modifier whenNotPaused() {
-        require(!isPaused, "Contract is paused");
-        
-    // Constructor
+        require(!isPaused, "Contract is paused")
     
     
 
