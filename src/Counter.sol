@@ -38,18 +38,21 @@ contract SimpleVault {
     /**
      * @dev Deposit ETH into the vault
      * @notice Sends ETH to this function to deposit
-  
+     */
+    function deposit() external payable whenNotPaused {
+        require(msg.value > 0, "Deposit must be greater than 0");
+
+        balances[msg.sender] += msg.value;
+        totalDeposits += msg.value;
+
+        emit Deposit(msg.sender, msg.value, block.timestamp);
+    }
 
     /**
      * @dev Withdraw ETH from the vault
      * @param amount The amount to withdraw in wei
      */
-    function withdraw(uint256 amount) external whenNotPaused {
-        require(amount > 0, "Amount must be greater than 0");
-        require(balances[msg.sender] >= amount, "Insufficient balance");
-        require(
-            address(this).balance >= amount,
-            "Insufficient contract balance"
+   
         );
 
         balances[msg.sender] -= amount;
