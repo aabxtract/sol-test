@@ -25,7 +25,7 @@ contract SimpleVault {
     }
 
     modifier whenNotPaused() {
-        require(!isPaused,)
+        require(!isPaused,
     /**
      * @dev Withdraw ETH from the vault
      * @param amount The amount to withdraw in wei
