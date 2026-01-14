@@ -12,24 +12,25 @@ contract SimpleVault {
     address public owner;
     bool public isPaused;
 
-    
+    // Events
+    event Deposit(address indexed user, uint256 amount, uint256 timestamp);
+    event Withdrawal(address indexed user, uint256 amount, uint256 timestamp);
+    event EmergencyWithdraw(address indexed user, uint256 amount);
+    event PauseToggled(bool isPaused);
 
-    // Constructor
-    constructor() {
-        owner = msg.sender;
-        isPaused = false;
+    // Modifiers
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not authorized");
+        _;
     }
 
-    /**
-     * @dev Deposit ETH into the vault
-     * @notice Sends ETH to this function to deposit
-     */
-    function deposit() external payable whenNotPaused {
-        require(msg.value > 0, "Deposit must be greater than 0");
+    modifier whenNotPaused() {
+        require(!isPaused, "Contract is paused");
+        _;
+    }
 
-        balances[msg.sender] += msg.value;
-        totalDeposits += msg.value;
-
+    // Constructor
+    
         emit Deposit(msg.sender, msg.value, block.timestamp);
     }
 
