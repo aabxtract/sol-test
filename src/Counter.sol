@@ -9,6 +9,7 @@ contract Storage {
     }
 
     Student public student;
+    mapping(address => Student) public students;
 
     function setStudent(
         string memory name,
