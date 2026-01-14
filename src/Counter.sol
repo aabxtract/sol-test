@@ -7,11 +7,7 @@ pragma solidity ^0.8.26;
  */
 contract SimpleVault {
     // State variables
-    mapping(address => uint256) public balances;
-    uint256 public totalDeposits;
-    address public owner;
-    bool public isPaused;
-
+    
     // Events
     event Deposit(address indexed user, uint256 amount, uint256 timestamp);
     event Withdrawal(address indexed user, uint256 amount, uint256 timestamp);
