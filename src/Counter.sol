@@ -98,13 +98,13 @@ contract SimpleVault {
      * @dev Get the contract's total ETH balance
      * @return The total ETH held by the contract
      */
-  
+    function getContractBalance() external view returns (uint256) {
+        return address(this).balance;
+    }
+
+    /**
      * @dev Toggle pause state (owner only)
      */
-    function togglePause() external onlyOwner {
-        isPaused = !isPaused;
-        emit PauseToggled(isPaused);
-    }
 
     /**
      * @dev Transfer ownership (owner only)
