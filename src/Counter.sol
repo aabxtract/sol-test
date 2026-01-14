@@ -106,14 +106,10 @@ contract SimpleVault {
      * @dev Toggle pause state (owner only)
      */
 
+
     /**
      * @dev Transfer ownership (owner only)
      * @param newOwner The address of the new owner
-     */
-    function transferOwnership(address newOwner) external onlyOwner {
-        require(newOwner != address(0), "Invalid address");
-        owner = newOwner;
-    }
 
     // Fallback function to receive ETH
     receive() external payable {
