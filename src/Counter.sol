@@ -1,25 +1,12 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
 
-contract Counter {
-    uint256 public number;
-
-    function setNumber(uint256 newNumber) public {
-        number = newNumber;
-    }
-    function addNumber(uint256 b) public view returns (uint256) {
-        return number + b;
+contract Storage {
+    struct Student {
+        string name;
+        uint256 age;
+        string gender;
     }
 
-    function subNumber(uint256 b) public view returns (uint256) {
-        return number - b;
-    }
-
-    function mulNumber(uint256 b) public view returns (uint256) {
-        return number * b;
-    }
-
-    function divNumber(uint256 b) public view returns (uint256) {
-        return number / b;
-    }
+    Student public student;
 }
