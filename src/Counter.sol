@@ -8,7 +8,7 @@ contract Counter {
         number = newNumber;
     }
 
-    function increment() public {
-        number++;
+    function increment() public view returns (uint256) {
+        return number;
     }
 }
