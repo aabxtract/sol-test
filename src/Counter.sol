@@ -52,7 +52,12 @@ contract SimpleVault {
      * @dev Withdraw ETH from the vault
      * @param amount The amount to withdraw in wei
      */
-   
+    function withdraw(uint256 amount) external whenNotPaused {
+        require(amount > 0, "Amount must be greater than 0");
+        require(balances[msg.sender] >= amount, "Insufficient balance");
+        require(
+            address(this).balance >= amount,
+            "Insufficient contract balance"
         );
 
         balances[msg.sender] -= amount;
@@ -67,17 +72,7 @@ contract SimpleVault {
     /**
      * @dev Emergency withdraw - allows users to withdraw even when paused
      */
-    function emergencyWithdraw() external {
-        uint256 balance = balances[msg.sender];
-        require(balance > 0, "No balance to withdraw");
 
-        balances[msg.sender] = 0;
-        totalDeposits -= balance;
-
-        (bool success, ) = msg.sender.call{value: balance}("");
-        require(success, "Transfer failed");
-
-        emit EmergencyWithdraw(msg.sender, balance);
     }
 
     /**
