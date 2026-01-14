@@ -9,4 +9,12 @@ contract Storage {
     }
 
     Student public student;
+
+    function setStudent(
+        string memory name,
+        uint256 age,
+        string memory gender
+    ) public {
+        student = Student(name, age, gender);
+    }
 }
