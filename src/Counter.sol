@@ -89,15 +89,16 @@ contract SimpleVault {
      * @dev Get the balance of a specific user
      * @param user The address to check
      * @return The balance of the user
-   
-     * @dev Get the contract's total ETH balance
-     * @return The total ETH held by the contract
      */
-    function getContractBalance() external view returns (uint256) {
-        return address(this).balance;
+    function getBalance(address user) external view returns (uint256) {
+        return balances[user];
     }
 
     /**
+     * @dev Get the contract's total ETH balance
+     * @return The total ETH held by the contract
+     */
+  
      * @dev Toggle pause state (owner only)
      */
     function togglePause() external onlyOwner {
