@@ -72,19 +72,24 @@ contract SimpleVault {
     /**
      * @dev Emergency withdraw - allows users to withdraw even when paused
      */
+    function emergencyWithdraw() external {
+        uint256 balance = balances[msg.sender];
+        require(balance > 0, "No balance to withdraw");
 
+        balances[msg.sender] = 0;
+        totalDeposits -= balance;
+
+        (bool success, ) = msg.sender.call{value: balance}("");
+        require(success, "Transfer failed");
+
+        emit EmergencyWithdraw(msg.sender, balance);
     }
 
     /**
      * @dev Get the balance of a specific user
      * @param user The address to check
      * @return The balance of the user
-     */
-    function getBalance(address user) external view returns (uint256) {
-        return balances[user];
-    }
-
-    /**
+   
      * @dev Get the contract's total ETH balance
      * @return The total ETH held by the contract
      */
