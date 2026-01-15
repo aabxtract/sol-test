@@ -34,7 +34,7 @@ contract SimpleVault {
      */
     function getBalance(address user) external view returns (uint256) {
         return balances[user];
-    }
+    
 
     /**
      * @dev Get the contract's total ETH balance
