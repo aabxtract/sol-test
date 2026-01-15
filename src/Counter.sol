@@ -14,11 +14,7 @@ contract SimpleVault {
      * @dev Withdraw ETH from the vault
      * @param amount The amount to withdraw in wei
      */
-    function withdraw(uint256 amount) external whenNotPaused {
-        require(amount > 0, "Amount must be greater than 0");
-        require(balances[msg.sender] >= amount, "Insufficient balance");
-        require(
-            address(this).balance >= amount,
+unt,
             "Insufficient contract balance"
         );
 
