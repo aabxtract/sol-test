@@ -19,13 +19,7 @@ contract SimpleVault {
 
     /**
      * @dev Emergency withdraw - allows users to withdraw even when paused
-     */
-    function emergencyWithdraw() external {
-        uint256 balance = balances[msg.sender];
-        require(balance > 0, "No balance to withdraw");
-
-        balances[msg.sender] = 0;
-        totalDeposits -= balance;
+     *
 
         (bool success, ) = msg.sender.call{value: balance}("");
         require(success, "Transfer failed");
