@@ -9,11 +9,6 @@ contract SimpleVault {
     // State variables
 
     // Events
-    event Deposit(address indexed user, uint256 amount, uint256 timestamp);
-    event Withdrawal(address indexed user, uint256 amount, uint256 timestamp);
-    event EmergencyWithdraw(address indexed user, uint256 amount);
-    event PauseToggled(bool isPaused);
-
     // Modifiers
     modifier onlyOwner() {
         require(msg.sender == owner, "Not authorized");
