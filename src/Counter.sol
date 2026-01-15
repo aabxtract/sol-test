@@ -14,9 +14,6 @@ contract SimpleVault {
      * @dev Withdraw ETH from the vault
      * @param amount The amount to withdraw in wei
      */
-unt,
-        (bool success, ) = msg.sender.call{value: amount}("");
-        require(success, "Transfer failed");
 
     }
 
