@@ -9,14 +9,7 @@ contract SimpleVault {
     // State variables
 
     // Events
-    // Modifiers
-    modifier onlyOwner() {
-        require(msg.sender == owner, "Not authorized");
-        _;
-    }
-
-    modifier whenNotPaused() {
-        require(!isPaused,
+    // Modifiersed,
     /**
      * @dev Withdraw ETH from the vault
      * @param amount The amount to withdraw in wei
