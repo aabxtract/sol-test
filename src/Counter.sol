@@ -31,9 +31,6 @@ contract SimpleVault {
      * @dev Get the balance of a specific user
      * @param user The address to check
      * @return The balance of the user
-     */
-    function getBalance(address user) external view returns (uint256) {
-        return balances[user];
     
 
     /**
