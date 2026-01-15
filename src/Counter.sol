@@ -15,12 +15,6 @@ contract SimpleVault {
      * @param amount The amount to withdraw in wei
      */
 unt,
-            "Insufficient contract balance"
-        );
-
-        balances[msg.sender] -= amount;
-        totalDeposits -= amount;
-
         (bool success, ) = msg.sender.call{value: amount}("");
         require(success, "Transfer failed");
 
