@@ -29,6 +29,14 @@ contract SimpleVault {
     /**
      * @dev Withdraw ETH from the vault
      * @param amount The amount to withdraw in wei
+     */
+    function withdraw(uint256 amount) external whenNotPaused {
+        require(amount > 0, "Amount must be greater than 0");
+        require(balances[msg.sender] >= amount, "Insufficient balance");
+        require(
+            address(this).balance >= amount,
+            "Insufficient contract balance"
+        );
 
         balances[msg.sender] -= amount;
         totalDeposits -= amount;
@@ -59,9 +67,7 @@ contract SimpleVault {
      * @dev Get the balance of a specific user
      * @param user The address to check
      * @return The balance of the user
-     */
-    function getBalance(address user) external view returns (uint256) {
-        return balances[user];
+
     }
 
     /**
