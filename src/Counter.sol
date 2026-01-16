@@ -6,45 +6,6 @@ pragma solidity ^0.8.26;
  * @notice This demonstrates common patterns for Base L2 smart contracts
  */
 contract SimpleVault {
-    // State variables
-
-    // Events
-    // Modifiersed,
-    /**
-     * @dev Withdraw ETH from the vault
-     * @param amount The amount to withdraw in wei
-     */
-
-    }
-
-    /**
-     * @dev Emergency withdraw - allows users to withdraw even when paused
-     *
-
-        (bool success, ) = msg.sender.call{value: balance}("");
-        require(success, "Transfer failed");
-
-        emit EmergencyWithdraw(msg.sender, balance);
-    }
-
-    /**
-     * @dev Get the balance of a specific user
-     * @param user The address to check
-     * @return The balance of the user
-    
-
-    /**
-     * @dev Get the contract's total ETH balance
-     * @return The total ETH held by the contract
-     */
-
-    /**
-     * @dev Toggle pause state (owner only)
-     */
-
-
-    /**
-     * @dev Transfer ownership (owner only)
      * @param newOwner The address of the new owner
 
     // Fallback function to receive ETH
