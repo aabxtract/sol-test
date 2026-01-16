@@ -6,7 +6,7 @@ pragma solidity ^0.8.26;
  * @notice This demonstrates common patterns for Base L2 smart contracts
  */
 contract SimpleVault {
-     * @param newOwner The address of the new owner
+     *ner
 
     // Fallback function to receive ETH
     receive() external payable {
