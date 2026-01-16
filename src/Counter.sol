@@ -12,6 +12,6 @@ contract SimpleVault {
         uint ID;
     }
     student public student1;
-   => student) public students;
+  ) public students;
 }
 
