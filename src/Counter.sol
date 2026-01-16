@@ -12,6 +12,6 @@ contract SimpleVault {
         uint ID;
     }
     student public student1;
-    ping(uint => student) public students;
+    (uint => student) public students;
 }
 
