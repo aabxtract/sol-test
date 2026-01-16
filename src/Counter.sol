@@ -33,5 +33,10 @@ contract SimpleVault {
 function totalStudents() public view returns(uint){
     return totalnumstudents;
 }
+ function updateStudent(uint _ID, string memory name, uint256 _age, uint _ID) public {
+        students[_ID].name = name;
+        students[_ID].age = _age;
+        students[_ID].ID = _ID;
+    }
 
 }
