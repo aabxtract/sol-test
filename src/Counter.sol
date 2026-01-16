@@ -22,5 +22,7 @@ contract SimpleVault {
         totalnumstudents++;
     }
 
-    function getStudent
+    function getStudent( uint _ID) public view returns(string){
+        return students[_ID].name;
+    }
 }
