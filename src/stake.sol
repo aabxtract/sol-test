@@ -14,4 +14,8 @@ contract Stake {
     function unstake() public {}
 
     function claimRewards() public {}
+
+    function getStake() public view returns (Stake memory) {
+        return stakes[msg.sender];
+    }
 }
