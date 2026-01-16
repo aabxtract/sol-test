@@ -21,11 +21,6 @@ contract SimpleVault {
         students[totalnumstudents] = newStudent;
         totalnumstudents++;
     }
-
-    function getStudent( uint _ID) public view returns(string){
-        return students[_ID].name;
-    }
-    
     }
 
 
