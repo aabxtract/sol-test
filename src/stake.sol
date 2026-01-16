@@ -7,5 +7,7 @@ contract Stake {
         uint endTime;
     }
 
+    mapping(address => Stake) public stakes;
+
     function stake() public {}
 }
