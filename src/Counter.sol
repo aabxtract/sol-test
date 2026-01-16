@@ -11,4 +11,4 @@ contract SimpleVault {
         uin256 age;
         uint ID;
     }
-    student public student1
+    student public studen
