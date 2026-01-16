@@ -6,5 +6,9 @@ pragma solidity ^0.8.26;
  * @notice This demonstrates common patterns for Base L2 smart contracts
  */
 contract SimpleVault {
-    struct student {}
+    struct student {
+        string name;
+        uin256 age;
+        uint ID
+    }
 }
