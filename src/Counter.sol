@@ -14,7 +14,11 @@ contract SimpleVault {
     student public student1;
     mapping(uint => student) public students;
 
+    uint totalnumstudents =+ 1;
+
     function addStudent(string memory name, uint256 _age, uint _ID) public {
         student memory newStudent = student(name, _age, _ID);
+        students[totalnumstudents] = newStudent;
+        totalnumstudents++;
     }
 }
