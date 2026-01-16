@@ -10,4 +10,8 @@ contract Stake {
     mapping(address => Stake) public stakes;
 
     function stake() public {}
+
+    function unstake() public {}
+
+    function claimRewards() public {}
 }
