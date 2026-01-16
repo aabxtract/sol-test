@@ -11,6 +11,4 @@ contract SimpleVault {
         uin256 age;
         uint ID;
     }
-    student public student1;
-    mapping(uint => student)
-}
+    student public student1
