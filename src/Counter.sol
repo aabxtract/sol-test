@@ -29,11 +29,7 @@ contract SimpleVault {
     function removeStudent(uint _ID) public {
         delete students[_ID];
    totalnumstudents--;
-    }
-function totalStudents() public view returns(uint){
-    return totalnumstudents;
-}
-
+    
     }
 
 
