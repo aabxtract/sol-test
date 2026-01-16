@@ -6,8 +6,7 @@ pragma solidity ^0.8.26;
  * @notice This demonstrates common patterns for Base L2 smart contracts
  */
 contract SimpleVault {
-    // Fallback function to receive ETH
-   () external payable {
+    // Fallback function to receive ETH {
         balances[msg.sender] += msg.value;
         totalDeposits += msg.value;
         emit Deposit(msg.sender, msg.value, block.timestamp);
