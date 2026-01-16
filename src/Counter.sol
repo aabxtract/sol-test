@@ -25,4 +25,8 @@ contract SimpleVault {
     function getStudent( uint _ID) public view returns(string){
         return students[_ID].name;
     }
+
+    function removeStudent(uint _ID) public {
+        delete students[_ID];
+    }
 }
