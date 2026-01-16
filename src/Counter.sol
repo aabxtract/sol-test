@@ -7,6 +7,4 @@ pragma solidity ^0.8.26;
  */
 contract SimpleVault {
     // Fallback function to receive ETH {
-    , msg.value, block.timestamp);
-    }
 }
