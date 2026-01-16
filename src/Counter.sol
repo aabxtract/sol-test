@@ -12,5 +12,5 @@ contract SimpleVault {
         uint ID;
     }
     student public student1;
-    mapping(uint => student) public 
+    mapping(uint => student)
 }
