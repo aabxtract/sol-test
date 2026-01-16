@@ -21,4 +21,6 @@ contract SimpleVault {
         students[totalnumstudents] = newStudent;
         totalnumstudents++;
     }
+
+    function getStudent
 }
