@@ -6,4 +6,6 @@ contract Stake {
         uint startTime;
         uint endTime;
     }
+
+    function stake() public {}
 }
