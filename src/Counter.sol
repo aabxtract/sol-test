@@ -7,7 +7,6 @@ pragma solidity ^0.8.26;
  */
 contract SimpleVault {
     // Fallback function to receive ETH {
-        balances[msg.sender] += msg.value;
         totalDeposits += msg.value;
         emit Deposit(msg.sender, msg.value, block.timestamp);
     }
