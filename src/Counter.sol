@@ -9,6 +9,8 @@ contract SimpleVault {
     struct student {
         string name;
         uin256 age;
-        uint ID
+        uint ID;
     }
+    student public student1;
+    mapping(uint => student) public students;
 }
