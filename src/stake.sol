@@ -1,9 +1,9 @@
 pragma solidity ^0.8.26;
 
 contract Stake {
-    function stake() public {}
-
-    function unstake() public {}
-
-    function claimRewards() public {}
+    struct Stake {
+        uint amount;
+        uint startTime;
+        uint endTime;
+    }
 }
