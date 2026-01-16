@@ -4,4 +4,6 @@ contract Stake {
     function stake() public {}
 
     function unstake() public {}
+
+    function claimRewards() public {}
 }
