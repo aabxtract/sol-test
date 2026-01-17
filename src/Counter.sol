@@ -8,6 +8,6 @@ pragma solidity ^0.8.26;
 contract SimpleVault {
     struct student {
         string name;
-        uin
+        ui
         
     
