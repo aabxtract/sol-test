@@ -10,5 +10,4 @@ contract SimpleVault {
         string name;
         uin256 age;
         uint ID;
-    }
     
