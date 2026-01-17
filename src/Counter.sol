@@ -9,5 +9,5 @@ contract SimpleVault {
     struct student {
         string name;
         uin256 age;
-        uint ID;
+        uint ID
     
