@@ -7,4 +7,8 @@ pragma solidity ^0.8.26;
  */
 contract SimpleCounter {
     uint256 public count;
+
+    function increment() public {
+        count++;
+    }
 }
