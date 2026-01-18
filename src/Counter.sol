@@ -5,5 +5,4 @@ pragma solidity ^0.8.26;
  * @dev A basic vault contract for Base L2 that allows users to deposit and withdraw ETH
  * @notice This demonstrates common patterns for Base L2 smart contracts
  */
-contract SimpleVault {
-    
+contract SimpleVault {}
