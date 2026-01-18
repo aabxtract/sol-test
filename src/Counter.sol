@@ -11,4 +11,8 @@ contract SimpleCounter {
     function increment() public {
         count++;
     }
+
+    function decrement() public {
+        count--;
+    }
 }
