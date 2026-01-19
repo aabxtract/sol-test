@@ -4,7 +4,7 @@ contract Stake {
     struct Stake {
         uint amount;
         uint startTime;
-        uint endTime;
+       
     }
 
     mapping(address => Stake) public stakes;
