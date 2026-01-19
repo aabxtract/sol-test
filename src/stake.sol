@@ -16,6 +16,6 @@ contract Stake {
     function claimRewards() public {}
 
     function getStake() public view returns (Stake memory) {
-        return stakes[msg.send
+        return stakes[msg.s
     }
 }
