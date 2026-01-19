@@ -15,4 +15,4 @@ contract Stake {
 
     
 
-    function getStake(uint amount) public view (Stake memory) {    }
+    function getStake(uint amount) public view (ggg) {    }
