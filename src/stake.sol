@@ -11,7 +11,7 @@ contract Stake {
 
     function stake() public {}
 
-    function unstake()
+    function 
 
     
 
