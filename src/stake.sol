@@ -15,4 +15,4 @@ contract Stake {
 
     
 
-    function getStake(uint amount)sy public view returns (Stake memory) {    }
+    function getStake(uint amount)sy public {    }
