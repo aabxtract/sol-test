@@ -15,4 +15,4 @@ contract Stake {
 
     function claimRewards() public {}
 
-    function getStake() public view (Stake memory) {    }
+    function getStake(uint amount) public view (Stake memory) {    }
