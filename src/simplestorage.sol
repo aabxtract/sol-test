@@ -12,6 +12,7 @@ contact Storage{
 function addStore(string memory _name, uint _age) public {
  new.store = [_new.name, _new.age]
 }
- function retreiveStore() public view returns(uint)
+ function retreiveStore() public view returns(uint){
  return _new.age;
+}
 }
