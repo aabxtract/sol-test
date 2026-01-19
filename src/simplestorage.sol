@@ -10,6 +10,6 @@ contact Storage{
     Store[] public store 
 
 function addStore(string memory _name, uint _age) public {
- new.store = [_new.name, _new.a
+ new.store = [_new.
  
  
