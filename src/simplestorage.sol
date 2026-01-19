@@ -9,6 +9,6 @@ contact Storage{
 
     Store[] public store 
 
-function addStore( )
+function addStore(string )
 
 }
