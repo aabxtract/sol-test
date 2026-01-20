@@ -18,4 +18,8 @@ contract Storage {
     function get(uint _index) public view returns (string memory, uint) {
         return (store[_index].name, store[_index].age);
     }
+
+    function update(uint _index, string memory _name, uint _age) public {
+        store[_index] = Store(_name, _age);
+    }
 }
