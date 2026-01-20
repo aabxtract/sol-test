@@ -9,6 +9,5 @@ contact Storage{
 
     Store[] public store 
 
-ghsg
  
  
