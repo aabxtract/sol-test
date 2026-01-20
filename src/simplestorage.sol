@@ -7,6 +7,6 @@ contact Storage{
         uint age;
     }
 
-    Store[] public 
+    Store[] 
  
  
