@@ -22,4 +22,9 @@ contract Storage {
     function update(uint _index, string memory _name, uint _age) public {
         store[_index] = Store(_name, _age);
     }
+
+    function remove(uint _index) public {
+        store[_index] = store[store.length - 1];
+        store.pop();
+    }
 }
