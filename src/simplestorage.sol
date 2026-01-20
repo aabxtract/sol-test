@@ -1,7 +1,7 @@
 //SPDX LICENSE IDENTIFIER: MIT
 pragma solidity ^0.8.30;
 
-contact Storage{
+contract Storage{
     struct Store{
         string name;
         uint age;
@@ -14,5 +14,7 @@ contact Storage{
     function add(string memory _name, uint _age){
         store.push(Store(_name,_age));
     }
- 
+
+    function 
+}
  
