@@ -32,5 +32,4 @@ contract Storage {
         return store.length;
     }
 
-    function delete(uint _index) public {
-        d
+    function delete(uint _index) public 
