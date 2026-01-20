@@ -10,5 +10,7 @@ contact Storage{
     Store[] public store;
 
     mapping (uint=>string) public name;
+
+    function a
  
  
