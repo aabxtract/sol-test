@@ -32,4 +32,4 @@ contract Storage {
         return store.length;
     }
 
-    function 
+    funct
