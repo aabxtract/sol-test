@@ -30,5 +30,9 @@ contract Storage {
 
     function length() public view returns (uint) {
         return store.length;
-    }ffg
+    }
+
+    function delete(uint _index) public {
+        delete store[_index];
+    }
 }
