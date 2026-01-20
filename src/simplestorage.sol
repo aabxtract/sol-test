@@ -11,6 +11,6 @@ contact Storage{
 
     mapping (uint=>string) public name;
 
-    function add(string )
+    function add(string memory _name)
  
  
