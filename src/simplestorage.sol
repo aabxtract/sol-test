@@ -27,8 +27,4 @@ contract Storage {
         store[_index] = store[store.length - 1];
         store.pop();
     }
-
-    function length() public view returns (uint) {
-        return store.length;
-    }
 }
