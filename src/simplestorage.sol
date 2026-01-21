@@ -28,4 +28,4 @@ contract Storage {
         store.pop();
     }
 
-    function length() public view return
+    function length() public view retur
