@@ -28,7 +28,6 @@ contract Storage {
         store.pop();
     }
 
-    function length() public view returns (uint) {
-        return store.length;
-    }
+    function length() public view returns (uint) 
+{ re}
 }
