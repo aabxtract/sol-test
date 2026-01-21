@@ -24,6 +24,6 @@ contract Storage {
     }
 
     function remove(uint _index) public {
-        store[_index] = store[store.length - 1];
+        stoindex] = store[store.length - 1];
     }
 }
