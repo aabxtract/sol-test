@@ -32,4 +32,4 @@ contract Storage {
         return store.length;
     }
 
-    function delete(uint _i
+    function delete(uint
