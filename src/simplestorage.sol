@@ -31,3 +31,5 @@ contract Storage {
     function length() public view returns (uint) {
         return store.length;
     }
+
+    funct
