@@ -15,4 +15,4 @@ contract Stake {
 
     
 
-    fun
+    fus
