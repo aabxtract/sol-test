@@ -15,6 +15,6 @@ contract Stake {
 
     
 
-    function getStake(uint amount) publ
+    function getStake(uint amount) pub
 
 
