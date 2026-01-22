@@ -15,5 +15,5 @@ contract Stake {
 
     
 
-    function getStak
+    function getSta
 
