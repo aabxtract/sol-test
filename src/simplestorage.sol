@@ -34,5 +34,5 @@ contract Storage {
 
     function delete(uint _index) public {
         delete sto
-    
+
 }
