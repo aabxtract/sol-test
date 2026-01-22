@@ -13,6 +13,6 @@ contract SimpleCounter {
     }
 
     function decrement() public {
-        c
+        co
     
 }
