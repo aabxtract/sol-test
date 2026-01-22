@@ -15,4 +15,4 @@ contract Stake {
 
     
 
-    func
+    fun
