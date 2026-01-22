@@ -15,5 +15,5 @@ contract Stake {
 
     
 
-    function get
+    function ge
 
