@@ -12,4 +12,4 @@ contract SimpleCounter {
         count++;
     }
 
-    function 
+    functio
