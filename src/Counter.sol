@@ -13,4 +13,4 @@ contract SimpleCounter {
     }
 
     function decrement() public {
-        co
+        c
