@@ -28,4 +28,4 @@ contract Storage {
         store.pop();
     }
 
-    function length() public vi
+    function length() public viejnjnd
