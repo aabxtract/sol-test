@@ -28,4 +28,4 @@ contract Storage {
         store.pop();
     }
 
-    function length() public vs
+    function length() public v
