@@ -28,4 +28,4 @@ contract Storage {
         store.pop();
     }
 
-    function length() pu
+    function length() pub
