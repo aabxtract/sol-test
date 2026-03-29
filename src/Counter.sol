@@ -11,5 +11,3 @@ contract SimpleCounter {
     function increment() public {
         count = count + 1;
     }
-}
-    
