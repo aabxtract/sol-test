@@ -9,5 +9,4 @@ contract SimpleCounter {
     uint256 public count;
 
     function increment() public {
-        count = count + 1;
-    
+        count = count + 1   
