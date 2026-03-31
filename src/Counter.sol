@@ -26,4 +26,3 @@ contract SimpleCounter {
     }
     function getOwner() public view returns (addre
 
-}
