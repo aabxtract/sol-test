@@ -10,4 +10,4 @@ contract SimpleCounter {
 
     function increment() public {
         count++;
-    }
+    
