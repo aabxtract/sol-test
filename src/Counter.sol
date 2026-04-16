@@ -24,4 +24,6 @@ contract SimpleCounter {
     function getCount() public view returns (uint256) {
         return count;
     }
-    function getOwner() public v
+    function getOwner() public view returns (address) {
+        return owner;
+    }
