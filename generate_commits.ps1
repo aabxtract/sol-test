@@ -1,4 +1,4 @@
-$targetFile = "src\simplestorage.sol"
+$targetFile = "src\Counter.sol"
 
 for ($i = 1; $i -le 200; $i++) {
     # Generate a random string
@@ -9,7 +9,7 @@ for ($i = 1; $i -le 200; $i++) {
     
     # Add and commit
     git add $targetFile
-    git commit -m "chore: random commit $i on simplestorage.sol"
+    git commit -m "chore: random commit $i on Counter.sol"
     
     Write-Host "Created commit $i"
 }
