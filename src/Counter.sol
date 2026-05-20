@@ -25,4 +25,4 @@ contract SimpleCounter {
         return count;
     }
     function getOwner() public view returns (address) {
-        return ownerg
+        return ownerg// Random commit comment 1 - NqVGfYrmIO
