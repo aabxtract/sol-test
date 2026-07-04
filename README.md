@@ -3,7 +3,7 @@
 Sol-Test is a cutting-edge developer tool designed to secure the next generation of smart contracts. It provides an automated, AI-driven vulnerability assessment platform for both **Solidity (EVM)** and **Stacks (Clarity)** smart contracts.
 
 ## 🚀 Overview
-As the decentralized finance (DeFi) ecosystem scales, the risks associated with smart contract vulnerabilities have grown exponentially. Sol-Test aims to democratize security auditing by providing instant, high-fidelity security feedback directly to developers during the coding process.
+ the decentralized finance (DeFi) ecosystem scales, the risks associated with smart contract vulnerabilities have grown exponentially. Sol-Test aims to democratize security auditing by providing instant, high-fidelity security feedback directly to developers during the coding process.
 
 ## ✨ Key Features
 - **Multi-Chain Support**: Native support for Solidity (.sol) and Stacks Clarity (.clar) contracts.
